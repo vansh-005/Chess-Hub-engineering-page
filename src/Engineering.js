@@ -73,7 +73,7 @@ const Engineering = () => {
               badge="System Architecture"
               title="High-Level Design"
               description="Microservices-based system for real-time chess analysis"
-              image="hld.png"
+              image="hld.svg"
               fallback="Add High-Level Architecture Diagram"
           />
 
@@ -99,6 +99,14 @@ const Engineering = () => {
               description="Coordinates game monitoring and events"
               image="orchestrator.svg"
               fallback="Add Orchestrator Diagram"
+          />
+
+          <DiagramSection
+              badge="Service Architecture"
+              title="Analysis Orchestrator Architecture"
+              description="Brain of the sytem classifies moves in Brilliant, Blunder etc."
+              image="analysis_orchestrator.svg"
+              fallback="Add Analysis Orchestrator Diagram"
           />
 
           <DiagramSection
@@ -244,7 +252,7 @@ const Engineering = () => {
                               }}
                           />
                           <h4>{tech.name}</h4>
-                          {/*<p>{tech.desc}</p>*/}
+                          <p>{tech.desc}</p>
                       </div>
                   ))}
               </div>

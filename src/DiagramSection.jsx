@@ -2,8 +2,9 @@ import React from "react";
 
 const DiagramSection = ({ badge, title, description, image, fallback }) => {
     return (
-        <section className="architecture-section">
+        <section className="architecture-section compact">
             <div className="section-badge">{badge}</div>
+
             <h2 className="section-title">{title}</h2>
 
             {description && (
